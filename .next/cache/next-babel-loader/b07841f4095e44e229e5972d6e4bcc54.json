@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default ((req, res) => {\n  console.log(\"the request...\");\n  console.log(\"this is all ran on the server (in a lambda)\");\n  console.log(req);\n  res.status(200).json({\n    text: 'Hello'\n  });\n});","map":null,"metadata":{},"sourceType":"module"}
