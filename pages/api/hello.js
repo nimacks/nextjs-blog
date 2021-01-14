@@ -6,7 +6,7 @@ Amplify.configure({ ...awsExports, ssr: true });
 
 export default async (req, res) => {
     console.log("the request...");
-    console.log("this is all ran on the server (in a lambda)");
+    console.log("this is all ran on the server (in a lambdaaaaaaaaaaa)");
 
     console.log(req);
 
