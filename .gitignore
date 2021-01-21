@@ -5,6 +5,10 @@ jspm_packages
 # Serverless directories
 .serverless
 
+# next.js
+/.next/
+/out/
+
 #amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
