@@ -1,0 +1,29 @@
+version: 1
+
+backend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - amplifyPush --simple
+        - npm run build
+        - aws s3 mb s3://jffranzo-nextjs-deploy-bucket-23892389389238923
+        - aws s3 sync "s3://jffranzo-nextjs-deploy-bucket-23892389389238923/${AWS_APP_ID}/${AWS_BRANCH}/.serverless" .serverless   # pull previous state
+        - export DOMAIN="${AWS_APP_ID}.amplifyapp.com" 
+        - export SUBDOMAIN="${AWS_BRANCH}"
+        - npx serverless
+        - aws s3 sync .serverless "s3://jffranzo-nextjs-deploy-bucket-23892389389238923/${AWS_APP_ID}/${AWS_BRANCH}/.serverless"   # push state to bucket
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "nextjs app, skipping"
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
