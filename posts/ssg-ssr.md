@@ -1,5 +1,5 @@
 ---
-title: 'NEW title'
+title: 'Jareds title'
 date: '2021-02-03'
 ---
 
