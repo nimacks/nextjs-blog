@@ -1,6 +1,6 @@
 ---
-title: 'Test Title v13'
-date: '2021-03-11'
+title: 'Test Title v14'
+date: '2021-03-12'
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
