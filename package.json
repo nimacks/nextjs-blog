@@ -10,6 +10,7 @@
   "dependencies": {
     "aws-amplify": "^3.3.14",
     "date-fns": "^2.16.1",
+    "got": "^11.8.2",
     "gray-matter": "^4.0.2",
     "next": "^10.0.0",
     "react": "16.13.1",
