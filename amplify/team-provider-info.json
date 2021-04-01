@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-nextblog2021-dev-134404-authRole",
-      "UnauthRoleArn": "arn:aws:iam::120804186529:role/amplify-nextblog2021-dev-134404-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::120804186529:role/amplify-nextblog2021-dev-134404-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-nextblog2021-dev-134404-deployment",
-      "UnauthRoleName": "amplify-nextblog2021-dev-134404-unauthRole",
-      "StackName": "amplify-nextblog2021-dev-134404",
-      "StackId": "arn:aws:cloudformation:us-east-1:120804186529:stack/amplify-nextblog2021-dev-134404/cb900ba0-5c31-11eb-90b4-0e71a2c850a7",
-      "AmplifyAppId": "d1hzistp4by753"
+      "AuthRoleName": "amplify-nextjsblog-dev-140230-authRole",
+      "UnauthRoleArn": "arn:aws:iam::120804186529:role/amplify-nextjsblog-dev-140230-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::120804186529:role/amplify-nextjsblog-dev-140230-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-nextjsblog-dev-140230-deployment",
+      "UnauthRoleName": "amplify-nextjsblog-dev-140230-unauthRole",
+      "StackName": "amplify-nextjsblog-dev-140230",
+      "StackId": "arn:aws:cloudformation:us-west-2:120804186529:stack/amplify-nextjsblog-dev-140230/940eee70-932d-11eb-a8ad-02b936f108eb",
+      "AmplifyAppId": "d1hcwxettif18v"
     }
   }
 }
