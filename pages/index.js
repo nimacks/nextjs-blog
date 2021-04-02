@@ -5,16 +5,25 @@ import Layout, { siteTitle } from '../components/layout'
 import Date from '../components/date'
 
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
+// import { getSortedPostsData } from '../lib/posts'
+import fetch from 'node-fetch'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  
+  const response = await fetch('https://6obli1j4bb.execute-api.us-west-2.amazonaws.com/Prod/hello');
+  const allPostsData = [await response.json()];
+  // const ar = [r];
+  // console.log("->>>" + JSON.stringify(ar));
+
   return {
     props: {
-      allPostsData
+      allPostsData,
     },
-    revalidate: 40,
+    revalidate: 120,
   }
+
+
+
 }
 
 // export async function getServerSideProps(context) {
