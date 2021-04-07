@@ -1,5 +1,5 @@
 ---
-title: 'Two Forms of Pre-rendering PART 2'
+title: 'branch 2'
 date: '2021-02-02'
 ---
 
